@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# DeepSea integration test "suites/basic/stage-5.sh"
+# DeepSea integration test "stage-5.sh"
 #
 # This script runs DeepSea stages 2 and 5 to remove a storage-only node from
 # an existing Ceph cluster.
