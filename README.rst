@@ -30,6 +30,8 @@ in the ``common/`` subdirectory.
 Assumptions
 -----------
 
+The script makes the following assumptions::
+
 1. there are at least two test nodes (VMs or physical machines) that are
 running the same OS (e.g. Leap 42.3) and can see eachother over the network. 
 2. all the test nodes are configured as a Salt cluster, i.e.: one node is
