@@ -36,11 +36,14 @@ The script makes the following assumptions:
 2. all the test nodes are configured as a Salt cluster, i.e.: one node is configured as both a master and a minion, the remaining nodes are configured as minions only, the master can "salt '*' test.ping" all the minions, and it is desirable for the script to deploy a Ceph cluster across all the minions (``deepsea_minions: *``)
 3. the nodes have at least one external drive (>= 10GB) for OSD and there are at least four OSDs, total, in the cluster
 4. the DeepSea code under test has already been installed on the master node
-5. the Ceph repos have already been set up on all nodes, so DeepSea can install the RPMs it needs
+5. the Ceph repos have already been set up on all nodes, so DeepSea can install
+the RPMs it needs
 
 
 Caveats
 -------
+
+The following caveats apply:
 
 1. Ceph will not work properly unless the nodes have (at least) short
 hostnames. That means the health-ok.sh script won't pass, either. There are two
